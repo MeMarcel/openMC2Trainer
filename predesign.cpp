@@ -19,7 +19,7 @@ void onTabSelected(tgui::Gui& gui, std::string selectedTab)
 int main()
 {
 
-    sf::RenderWindow window(sf::VideoMode(800, 600), "TGUI Tabs Example");
+    sf::RenderWindow window(sf::VideoMode(1024, 768), "TGUI Tabs Example");
     tgui::Gui gui{window};
 
     tgui::Tab::Ptr tabs = tgui::Tab::create();
@@ -34,7 +34,7 @@ int main()
     for(i=0; i < 7; i++) //initial all panels. u can do this firstwhen added the tabsheet
     {
         panel = tgui::Panel::create();
-        panel->setSize(400, 300);
+        panel->setSize(984, 728-tabs->getTabHeight());
         panel->setPosition(tabs->getPosition().x, tabs->getPosition().y + tabs->getTabHeight());
         gui.add(panel, tabnames[i]);
     }
