@@ -1,5 +1,5 @@
 # openMC2Trainer
-the goal is a extened opensource version of the ae trainer 5.5
+the goal is a extended opensource version of the ae trainer 5.5
 
 This Software Uses:
 https://tgui.eu/
